@@ -1,6 +1,6 @@
 import streamlit as st
-st.title('This is a title')
-st.title('_Streamlit_ is :blue[cool] :happy:')
+st.title('Site')
+st.title('_Ce site_ est :blue[bien] :happy:')
 st.write("Hello")
 name=st.text_input("Your name")
 st.write("hello" + name)
