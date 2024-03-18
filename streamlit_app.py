@@ -16,7 +16,7 @@ st.write("Traduis:"+word_fr)
 for i in range(4):
   st.button(voc["Hanzi"].values[indices[i]], on_clich=is_correct,args=[indices[i],j])
 def is_correct(i,j):
-    if i==j
+    if i==j:
   st.write("Bravo")
 else:
 st.write("Raté")
