@@ -1,10 +1,3 @@
 import streamlit as st
-st.title('Site')
-st.title('_Ce site_ est :blue[bien], "🍔")')
-st.write("Hello")
-name=st.text_input("Your name")
-st.write("hello" + name)
-col1, col2, col3 = st.columns(3)
-col1.metric("Temperature", "18 C°", "1.5 C°")
-col2.metric("Wind", "0 mph", "-8%")
-col3.metric("Humidity", "10%", "4%")
+voc=pd.read_CSV('https://docs.google.com/spreadsheets/d/1ZVqjn50wq2PFTtrWIr_Dc8mfuJfHJUFcmRNjtA2LSv0/edit?usp=sharing')
+st.dataframe(voc)
