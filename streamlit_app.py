@@ -12,14 +12,12 @@ st.write('Traduis: '+word_fr)
 def is_correct(i, j):
   if i==j:
     st.write("Bien joué !")
+    if "indices" in st.session_state:
     del st.session_state["indices"]
   else:
     st.write("Perdu !")
-    del st.session_state["indices"]
-    if "indices" in st.session_state:
+    st.session_state["indices"]=indices
       
-
-
 col1, col2 = st.columns(2) 
 with col1:
     for i in range(2):
